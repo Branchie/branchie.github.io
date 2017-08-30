@@ -2,5 +2,6 @@
 	"name": "Graffiti Grinder", 
 	"organisation": "Troll inc", 
 	"role": "Junior Programmer", 
-	"Info": "JSON info!"
+	"platforms": "Web, Android, IOS, Windows Metro",
+	"desc": "This is Graffiti Grinder JSON Info"
 }

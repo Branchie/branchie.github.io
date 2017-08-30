@@ -10,7 +10,7 @@
     <script src="Gallery.js"></script>
 </head>
 
-<body onload="Gallery('Piggy');">
+<body onload="Gallery('Piggy');" onkeypress="handleKeyPress(event)">
     <div class="header">
         <h1>Michael Semple</h1>
     </div>
@@ -20,38 +20,64 @@
         <div class="content">
 
             <div id="Gal">
-                <h2 id="GalleryGameName">FireDawgs</h2>
+                <h2 id="GalleryGameName">Spicy Piggy</h2>
 
                 <div id="Gallery Frame">
                     <table style="margin: 0px 8px 0px 8px;">
                         <tr>
                             <td><a href="javascript:void(0)" onclick="prevImage();"><img class="roundedimage" src="Images/ArrowLeft.png" /></a></td>
 
-                            <td><img id="GalleryImage" class="roundedimage" src="Images/Games/FireDawgs/gallery0.png" alt="Gallery" style="width:90%;" /></td>
+                            <td><img id="GalleryImage" class="roundedimage" src="Images/Games/Piggy/gallery0.png" alt="Gallery" style="width:90%;" /></td>
 
                             <td><a href="javascript:void(0)" onclick="nextImage();"><img class="roundedimage" src="Images/ArrowRight.png" /></a></td>
                         </tr>
                     </table>
                 </div>
+                
+                <table style="padding:4px 80px 2px 80px; width:100%">
+                    <tr>
+                        <th style="text-align:left">
+                            <p><b>Organisation</b></p>
+                            <p><b>Role</b></p>
+                            <p><b>Platforms</b></p>
+                        </th>
 
-                <p id="Organisation"><b>Organisation</b></p>
-                <p id="Role"><b>Role</b></p>
-                <p id="Info"><b>Info</b></p>
+                        <td style="text-align:right">
+                            <p id="Organisation">Gypopothomas</p>
+                            <p id="Role">Lead Programmer, Designer</p>
+                            <p id="Platforms">Android, IOS</p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <pre id="Info" style="padding:4px 16px 2px 16px; text-align:justify;"></pre>
 
             </div>
 
             <div id="Grid">
                 
-                <table style="align-content:center; width:100%; height:100%; line-height:32px">
+                <table style="align-content:center; width:100%; height:100%; line-height:32px;">
 
                     <tr>
                         <th onclick="showNext('Piggy');">           <a href="#">    Spicy Piggy    </a></th>
+                        <th onclick="showNext('Climber');">        <a href="#">    Volcano Dungeon of Dread      </a></th>
+                        <th onclick="showNext('LowRezJam');">    <a href="#">    LowRezJam  </a></th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showNext('Piggy');">           <a href="#"><img class="roundedimage" src="Images/Games/Piggy/Logo.png"         alt="Spicy Piggy" style="width:90%" /></a></td>
+                        <td onclick="showNext('Climber');">        <a href="#"><img class="roundedimage" src="Images/Games/Climber/Logo.png"      alt="Volcano Dungeon of Dread" style="width:90%" /></a></td>
+                        <td onclick="showNext('LowRezJam');">    <a href="#"><img class="roundedimage" src="Images/Games/LowRezJam/Logo.png"  alt="LowRezJam" style="width:90%" /></a></td>
+                    </tr>
+
+                    <tr>
+                        <th onclick="showNext('FireDawgs');">   <a href="#">    FireDawgs           </a></th>
                         <th onclick="showNext('DinoJump');">        <a href="#">    Dino Jump      </a></th>
                         <th onclick="showNext('CaptainTeddy');">    <a href="#">    Captain Teddy  </a></th>
                     </tr>
 
                     <tr>
-                        <td onclick="showNext('Piggy');">           <a href="#"><img class="roundedimage" src="Images/Games/Piggy/Logo.png"         alt="Spicy Piggy" style="width:90%" /></a></td>
+                        <td onclick="showNext('FireDawgs');">   <a href="#"><img class="roundedimage" src="Images/Games/FireDawgs/Logo.png" alt="FireDawgs" style="width:90%" /></a></td>
                         <td onclick="showNext('DinoJump');">        <a href="#"><img class="roundedimage" src="Images/Games/DinoJump/Logo.png"      alt="Dino Jump" style="width:90%" /></a></td>
                         <td onclick="showNext('CaptainTeddy');">    <a href="#"><img class="roundedimage" src="Images/Games/CaptainTeddy/Logo.png"  alt="Captain Teddy" style="width:90%" /></a></td>
                     </tr>
@@ -59,7 +85,7 @@
                     <tr>
                         <th onclick="showNext('FireDawgs');">   <a href="#">    FireDawgs           </a></th>
                         <th onclick="showNext('Unwound');">     <a href="#">    Unwound             </a></th>
-                        <th onclick="showNext('StarTroll');">   <a href="#">    Star Troll - Wii U  </a></th>
+                        <th onclick="showNext('StarTroll');">   <a href="#">    Star Troll          </a></th>
                     </tr>
 
                     <tr>
@@ -85,6 +111,7 @@
                         <th onclick="showNext('GG');">       <a href="#">    Graffiti Grinder               </a></th>
                         <th onclick="showNext('JAA');">      <a href="#">    Jellyflug: Antibody Assault    </a></th>
                     </tr>
+                    
 
                     <tr>
                         <td onclick="showNext('Emily');">       <a href="#"><img class="roundedimage" src="Images/Games/Emily/Logo.png"     alt="FABric Animals Starring Emily" style="width:90%" /></a></td>

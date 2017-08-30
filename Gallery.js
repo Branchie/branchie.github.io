@@ -17,12 +17,9 @@ function updateGalleryTarget(name) {
     activePath = path + name + "/gallery";
     this.name = name;
 
-    index = 1;
+    index = 0;
     updateImage();
     
-    //var text = '{ "name": "Spicy Piggy", "organisation": "Gypopothomas", "role": "Lead Programmer, Designer", "Info": "Developed by Gypopothomas and to be published by Nitrome, Spicy Piggy is sliding his way right onto your phone screens in 2017!"}';
-    //var obj = JSON.parse(path + name + '/info.JSON');
-
     var client = new XMLHttpRequest();
     client.open('GET', path + name + '/info.json');
     client.onreadystatechange = function () {
@@ -32,10 +29,20 @@ function updateGalleryTarget(name) {
         document.getElementById("GalleryGameName").textContent = obj.name;
         document.getElementById("Organisation").textContent = obj.organisation;
         document.getElementById("Role").textContent = obj.role;
-        document.getElementById("Info").textContent = obj.info;
-
+        document.getElementById("Platforms").textContent = obj.platforms;
+        document.getElementById("Info").textContent = obj.desc;
     }
     client.send();
+}
+
+function handleKeyPress(event)
+{
+    var x = event.which || event.keyCode;
+
+    if (x == 97 | x == 37)
+        prevImage();
+    else if (x == 100 | x == 39)
+        nextImage();
 }
 
 function resetIndex()

@@ -2,5 +2,6 @@
 	"name": "Fork The Police", 
 	"organisation": "Troll inc", 
 	"role": "Lead Programmer", 
-	"Info": "JSON info!"
+	"platforms": "Android, IOS, Windows Metro",
+	"desc": "This is Fork The Police JSON Info"
 }

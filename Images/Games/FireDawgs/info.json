@@ -2,5 +2,6 @@
 	"name": "FireDawgs", 
 	"organisation": "Troll inc", 
 	"role": "Lead Programmer", 
-	"Info": "JSON info!"
+	"platforms": "PC, Web",
+	"desc": "This is FireDawgs JSON Info"
 }

@@ -2,5 +2,6 @@
 	"name": "Rory's Story Cubes", 
 	"organisation": "Troll inc, The Creativity Hub", 
 	"role": "Programmer", 
-	"Info": "JSON info!"
+	"platforms": "Android, IOS",
+	"desc": "This is Rory's Story Cubes JSON Info"
 }

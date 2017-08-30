@@ -2,5 +2,6 @@
 	"name": "FABric Animals Starring Emily", 
 	"organisation": "Troll inc", 
 	"role": "Programmer", 
-	"Info": "JSON info!"
+	"platforms": "Android, IOS, Windows Phone",
+	"desc": "This is FABric Animals Starring Emily JSON Info"
 }

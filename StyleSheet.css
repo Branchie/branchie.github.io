@@ -8,6 +8,14 @@
     color: #323232;
 }
 
+pre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #323232;
+
+    white-space:pre-wrap;
+    text-align:justify;
+}
+
 a 
 {
     color: #0099FF;
