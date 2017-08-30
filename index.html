@@ -2,10 +2,109 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
     <meta charset="utf-8" />
-    <title></title>
+
+    <title>Michael Semple</title>
+
+    <script src="Gallery.js"></script>
 </head>
-<body>
-    <p>Neat temporary text!</p>
+
+<body onload="Gallery('Piggy');">
+    <div class="header">
+        <h1>Michael Semple</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="content">
+
+            <div id="Gal">
+                <h2 id="GalleryGameName">FireDawgs</h2>
+
+                <div id="Gallery Frame">
+                    <table style="margin: 0px 8px 0px 8px;">
+                        <tr>
+                            <td><a href="javascript:void(0)" onclick="prevImage();"><img class="roundedimage" src="Images/ArrowLeft.png" /></a></td>
+
+                            <td><img id="GalleryImage" class="roundedimage" src="Images/Games/FireDawgs/gallery0.png" alt="Gallery" style="width:90%;" /></td>
+
+                            <td><a href="javascript:void(0)" onclick="nextImage();"><img class="roundedimage" src="Images/ArrowRight.png" /></a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p id="Organisation"><b>Organisation</b></p>
+                <p id="Role"><b>Role</b></p>
+                <p id="Info"><b>Info</b></p>
+
+            </div>
+
+            <div id="Grid">
+                
+                <table style="align-content:center; width:100%; height:100%; line-height:32px">
+
+                    <tr>
+                        <th onclick="showNext('Piggy');">           <a href="#">    Spicy Piggy    </a></th>
+                        <th onclick="showNext('DinoJump');">        <a href="#">    Dino Jump      </a></th>
+                        <th onclick="showNext('CaptainTeddy');">    <a href="#">    Captain Teddy  </a></th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showNext('Piggy');">           <a href="#"><img class="roundedimage" src="Images/Games/Piggy/Logo.png"         alt="Spicy Piggy" style="width:90%" /></a></td>
+                        <td onclick="showNext('DinoJump');">        <a href="#"><img class="roundedimage" src="Images/Games/DinoJump/Logo.png"      alt="Dino Jump" style="width:90%" /></a></td>
+                        <td onclick="showNext('CaptainTeddy');">    <a href="#"><img class="roundedimage" src="Images/Games/CaptainTeddy/Logo.png"  alt="Captain Teddy" style="width:90%" /></a></td>
+                    </tr>
+
+                    <tr>
+                        <th onclick="showNext('FireDawgs');">   <a href="#">    FireDawgs           </a></th>
+                        <th onclick="showNext('Unwound');">     <a href="#">    Unwound             </a></th>
+                        <th onclick="showNext('StarTroll');">   <a href="#">    Star Troll - Wii U  </a></th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showNext('FireDawgs');">   <a href="#"><img class="roundedimage" src="Images/Games/FireDawgs/Logo.png" alt="FireDawgs" style="width:90%" /></a></td>
+                        <td onclick="showNext('Unwound');">     <a href="#"><img class="roundedimage" src="Images/Games/Unwound/Logo.png" alt="Unwound" style="width:90%" /></a></td>
+                        <td onclick="showNext('StarTroll');">   <a href="#"><img class="roundedimage" src="Images/Games/StarTroll/Logo.png" alt="Star Troll Wii U" style="width:90%" /></a></td>
+                    </tr>
+
+                    <tr>
+                        <th onclick="showNext('DogGunnit');">           <a href="#">    DogGunnit           </a></th>
+                        <th onclick="showNext('ForkThePolice');">       <a href="#">    Fork The Police     </a></th>
+                        <th onclick="showNext('RSC');">                 <a href="#">    Rory's Story Cubes  </a></th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showNext('DogGunnit');">           <a href="#"><img class="roundedimage" src="Images/Games/DogGunnit/Logo.png"         alt="DogGunnit"             style="width:90%" /></a></td>
+                        <td onclick="showNext('ForkThePolice');">       <a href="#"><img class="roundedimage" src="Images/Games/ForkThePolice/Logo.png"     alt="Fork The Police"       style="width:90%" /></a></td>
+                        <td onclick="showNext('RSC');">                 <a href="#"><img class="roundedimage" src="Images/Games/RSC/Logo.png"               alt="Rory's Story Cubes"   style="width:90%" /></a></td>
+                    </tr>
+
+                    <tr>
+                        <th onclick="showNext('Emily');">    <a href="#">    FABric Animals Starring Emily  </a></th>
+                        <th onclick="showNext('GG');">       <a href="#">    Graffiti Grinder               </a></th>
+                        <th onclick="showNext('JAA');">      <a href="#">    Jellyflug: Antibody Assault    </a></th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showNext('Emily');">       <a href="#"><img class="roundedimage" src="Images/Games/Emily/Logo.png"     alt="FABric Animals Starring Emily" style="width:90%" /></a></td>
+                        <td onclick="showNext('GG');">          <a href="#"><img class="roundedimage" src="Images/Games/GG/Logo.png"        alt="Graffiti Grinder" style="width:90%" /></a></td>
+                        <td onclick="showNext('JAA');">         <a href="#"><img class="roundedimage" src="Images/Games/JAA/Logo.png"       alt="Jellyflug:Antibody Assault" style="width:90%" /></a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <hr />
+        <p>Copyright &copy; Michael Semple 2017. All Rights Reserved.</p>
+    </div>
+
 </body>
 </html>
