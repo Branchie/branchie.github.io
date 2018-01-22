@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "PiggyGL.data.unityweb",
+"asmCodeUrl": "PiggyGL.asm.code.unityweb",
+"asmMemoryUrl": "PiggyGL.asm.memory.unityweb",
+"asmFrameworkUrl": "PiggyGL.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}
