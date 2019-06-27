@@ -1,7 +1,7 @@
 {
-"companyName": "DefaultCompany",
+"companyName": "Gypopothomas",
 "productName": "SynthCity",
-"productVersion": "0.1",
+"productVersion": "1.0",
 "dataUrl": "SynthCityWeb.data.unityweb",
 "wasmCodeUrl": "SynthCityWeb.wasm.code.unityweb",
 "wasmFrameworkUrl": "SynthCityWeb.wasm.framework.unityweb",
