@@ -1,0 +1,16 @@
+{
+"companyName": "Gypo",
+"productName": "SpicierPorky",
+"productVersion": "0.1",
+"dataUrl": "SpicierPorky.data.unityweb",
+"wasmCodeUrl": "SpicierPorky.wasm.code.unityweb",
+"wasmFrameworkUrl": "SpicierPorky.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#0E1319",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0b11"
+}
